@@ -485,7 +485,7 @@ body.loaded .floating-card {
 }
 
 .stat-label {
-    color: #666;
+    color: #666666;
     font-weight: 500;
 }
 
@@ -586,7 +586,7 @@ body.loaded .floating-card {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: #667eea;
+    color: #9864e1;
 }
 
 .footer-section p {
