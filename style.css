@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-    max-width: unset;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -260,17 +260,18 @@ p {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
 }
 
 .service-card {
     background: white;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    margin: 0
 }
 
 .service-card:hover {
