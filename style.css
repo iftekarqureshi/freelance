@@ -217,7 +217,22 @@ p {
     align-items: center;
     gap: 0.5rem;
     animation: float 6s ease-in-out infinite;
+    transform: translateY(30px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
+
+.floating-card {
+    opacity: 0;
+    transform: translateY(30px); /* initial state */
+    transition: all 0.5s ease-in-out;
+}
+
+body.loaded .floating-card {
+    opacity: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
 
 .floating-card:nth-child(1) {
     top: 20%;

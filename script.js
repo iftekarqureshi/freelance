@@ -201,7 +201,9 @@ window.addEventListener('scroll', () => {
 
 // Add loading animation
 window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+    }, 500); // let things settle first
     
     // Animate elements on load
     setTimeout(() => {
