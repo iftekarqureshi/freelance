@@ -254,15 +254,19 @@ p {
 
 /* Services Section */
 .services {
-    padding: 40px 0;
+    padding: 60px 0;
     background: #f8f9ff;
+    width: 100%;
 }
+
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    justify-content: center;
 }
+
 
 .service-card {
     background: white;
@@ -572,16 +576,15 @@ p {
 
 .footer-section p {
     color: #b
-   
-/* ========== Responsive Media Queries ========== */
 
+    
 /* ========== Responsive Media Queries ========== */
 
 @media (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
     .hero-buttons {
         justify-content: center;
@@ -589,9 +592,11 @@ p {
         gap: 1rem;
     }
 
+    @media (max-width: 768px) {
     .services-grid {
         grid-template-columns: 1fr;
     }
+}
 
     .portfolio-grid {
         grid-template-columns: 1fr;
